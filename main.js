@@ -33,6 +33,11 @@ const gridDrawer = (size) => {
       if (!isDrawing) return;
       pixel.style.backgroundColor = colorEl.value;
     });
+
+    pixel.addEventListener('touchmove', () => {
+      if (!isDrawing) return;
+      pixel.style.backgroundColor = colorEl.value;
+    });
   }
 };
 
@@ -53,5 +58,8 @@ numberInput.addEventListener('change', () => {
 
 window.addEventListener('mousedown', () => (isDrawing = true));
 window.addEventListener('mouseup', () => (isDrawing = false));
+
+window.addEventListener('touchstart', () => (isDrawing = true));
+window.addEventListener('touchend', () => (isDrawing = false));
 
 gridDrawer(DEFAULT_GRID_SIZE);
