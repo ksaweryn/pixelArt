@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  --pageBackgroundColor: #eef1ff;
+  --actionsCanvasColor: #A3A5A5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--pageBackgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5em;
+  background-color: var(--actionsCanvasColor);
+  width: calc(100vw - 200px);
+  height: 2vw;
+  margin-bottom: 0.25em;
+  padding: 3px;
+  border-radius: 2px;
+
+}
+
+.canvas {
+  --canvasSize: 20;
+  background: var(--actionsCanvasColor);
+  width: calc(100vw - 200px);
+  height: calc(100vh - 50px);
+  display: grid;
+  grid-template-columns: repeat(var(--canvasSize), 1fr);
+  grid-template-rows: repeat(var(--canvasSize), 1fr);
+  gap: 2px;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.resetBtn,
+.colorInput,
+.numberInput {
+  padding: 0 1px;
+  height: 25px;
+  border: unset;
+  border-radius: 2px;
+}
+
+.resetBtn,
+.colorInput {
+  cursor: pointer;
+  width: 80px;
+}
+
+.numberInput {
+  width: 70px;
+}
+
+.numberInput:focus-visible,
+.numberInput:hover {
+  outline: black;
+}
+
+.pixel {
+  --defaultBackgroundColor: rgb(209, 223, 223);
+  background-color: var(--defaultBackgroundColor);
+}
