@@ -46,6 +46,10 @@ body {
   margin-bottom: 1em;
 }
 
+label{
+  color: #fff;
+}
+
 .resetBtn,
 .colorInput,
 .numberInput {
@@ -62,7 +66,7 @@ body {
 }
 
 .numberInput {
-  width: 70px;
+  width: 150px;
 }
 
 .numberInput:focus-visible,
