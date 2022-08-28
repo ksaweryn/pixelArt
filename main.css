@@ -50,6 +50,12 @@ label {
   color: #fff;
 }
 
+.generateBtn {
+  cursor: pointer;
+  width: 100px;
+}
+
+.generateBtn,
 .resetBtn,
 .colorInput,
 .numberInput {
@@ -69,11 +75,11 @@ label {
   width: 150px;
 }
 
-.resetBtn:hover {
+button:hover {
   box-shadow: 5px 5px #888888;
 }
 
-.resetBtn:active {
+button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
@@ -111,6 +117,7 @@ label {
   }
 
   .resetBtn,
+  .generateBtn,
   .colorInput,
   .numberInput {
     width: 100%;
@@ -128,8 +135,9 @@ label {
   }
 
   .resetBtn,
+  .generateBtn,
   .colorInput,
   .numberInput {
-    height: 20px;
+    height: 18px;
   }
 }
