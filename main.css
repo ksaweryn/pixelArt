@@ -71,5 +71,6 @@ body {
 
 .pixel {
   --defaultBackgroundColor: #fff;
+  cursor: pointer;
   background-color: var(--defaultBackgroundColor);
 }
