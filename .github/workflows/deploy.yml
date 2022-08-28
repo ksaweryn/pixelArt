@@ -21,7 +21,10 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           
           script: |
-            mkdir test
-            cd test
-            git clone git@github.com:ksaweryn/pixelArt.git
+            cd ${{ secrets.PROJECT_PATH }}
+            rm -rf pixelArt
+            git clone ${{ secrets.GIT_PROJECT }}
+            cd pixelArt
+            rm -rf .github example
+            rm LICENSE README.md
             echo 'Deployment successful'
