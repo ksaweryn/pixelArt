@@ -3,10 +3,19 @@
 const DEFAULT_GRID_SIZE = 50;
 const DEFAULT_COLOR_EL_VALUR = '#001122';
 const PIXEL_CLASS_NAME = 'pixel';
+const COLOR_CODE = '0123456789ABCDEF';
 const canvas = document.querySelector('.canvas');
 const numberInput = document.querySelector('.numberInput');
 const colorEl = document.querySelector('.colorInput');
 let isDrawing = false;
+
+const generateRandomColor = () => {
+  let code = '#';
+  for (let count = 0; count < 6; count++) {
+    code = `${code}${COLOR_CODE[Math.floor(Math.random() * 16)]}`;
+  }
+  return code;
+};
 
 const gridDrawer = (size) => {
   if (size > 100) {
@@ -55,6 +64,14 @@ numberInput.addEventListener('keyup', () => {
 numberInput.addEventListener('change', () => {
   gridDrawer(numberInput.value);
 });
+
+const generateArt = () => {
+  canvas.childNodes.forEach((node, index) => {
+    setTimeout(() => {
+      node.style.backgroundColor = generateRandomColor();
+    }, 15 * (index + 1));
+  });
+};
 
 window.addEventListener('mousedown', () => (isDrawing = true));
 window.addEventListener('mouseup', () => (isDrawing = false));
