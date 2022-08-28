@@ -25,6 +25,6 @@ jobs:
             rm -rf pixelArt
             git clone ${{ secrets.GIT_PROJECT }}
             cd pixelArt
-            rm -rf .github example
+            rm -rf .github .git example
             rm LICENSE README.md
             echo 'Deployment successful'
