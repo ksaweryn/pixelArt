@@ -95,3 +95,41 @@ label {
   width: 8vw;
   margin-bottom: 1em;
 }
+
+@media (max-width: 576px) {
+
+  .actions, .canvas {
+    width: 90vw;
+  }
+
+  .actions {
+    height: 4vw;
+  }
+
+  .author {
+    width: 24vw;
+  }
+
+  .resetBtn,
+  .colorInput,
+  .numberInput {
+    width: 100%;
+    height: 10px;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .author {
+    width: 18vw;
+  }
+
+  .resetBtn,
+  .colorInput,
+  .numberInput {
+    height: 20px;
+  }
+}
