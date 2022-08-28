@@ -33,7 +33,7 @@ body {
 }
 
 .canvas {
-  --canvasSize: 20;
+  --canvasSize: 50;
   background: var(--actionsCanvasColor);
   width: calc(100vw - 200px);
   height: calc(100vh - 50px);

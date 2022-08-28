@@ -1,6 +1,6 @@
 'use-strict';
 
-const DEFAULT_GRID_SIZE = 20;
+const DEFAULT_GRID_SIZE = 50;
 const DEFAULT_COLOR_EL_VALUR = '#001122';
 const PIXEL_CLASS_NAME = 'pixel';
 const canvas = document.querySelector('.canvas');
