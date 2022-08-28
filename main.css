@@ -43,6 +43,7 @@ body {
   gap: 2px;
   padding: 3px;
   border-radius: 2px;
+  margin-bottom: 1em;
 }
 
 .resetBtn,
@@ -73,4 +74,10 @@ body {
   --defaultBackgroundColor: #fff;
   cursor: pointer;
   background-color: var(--defaultBackgroundColor);
+}
+
+.author {
+  align-self: flex-end;
+  width: 8vw;
+  margin-bottom: 1em;
 }
