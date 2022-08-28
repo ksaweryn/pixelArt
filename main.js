@@ -1,6 +1,7 @@
 'use-strict';
 
 const DEFAULT_GRID_SIZE = 20;
+const DEFAULT_COLOR_EL_VALUR = '#001122';
 const PIXEL_CLASS_NAME = 'pixel';
 const canvas = document.querySelector('.canvas');
 const numberInput = document.querySelector('.numberInput');
@@ -16,8 +17,8 @@ const gridDrawer = (size) => {
     numberInput = 1;
     return;
   }
-  canvas.style.setProperty('--canvasSize', size);
   canvas.innerHTML = '';
+  canvas.style.setProperty('--canvasSize', size);
 
   for (let i = 1; i <= size * size; i++) {
     const pixel = document.createElement('div');
@@ -38,7 +39,7 @@ const gridDrawer = (size) => {
 const resetCanvas = () => {
   canvas.innerHTML = '';
   numberInput.value = DEFAULT_GRID_SIZE;
-  colorEl.value = '#001122';
+  colorEl.value = DEFAULT_COLOR_EL_VALUR;
   gridDrawer(DEFAULT_GRID_SIZE);
 };
 
