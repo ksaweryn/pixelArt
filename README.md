@@ -7,7 +7,7 @@ This project allows users to create Pixel Art in a customizable grid
 ## Live
 
 If you want to try the code please go to
-![Pixel Art link](https://jborja.dev/pixelArt/)
+[Pixel Art link](https://jborja.dev/pixelArt/)
 
 ### Author
 Javier Borja
