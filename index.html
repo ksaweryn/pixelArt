@@ -11,10 +11,11 @@
 
 <body>
   <div class="actions">
-    <button class="resetBtn" value="Reset" onclick="resetCanvas()">Reset</button>
-    <input class="colorInput" type="color" value="#001122" />
-    <label for="gridRange">Grid size  </label>
+    <label for="gridRange">Grid size</label>
     <input id="gridRange" class="numberInput" type="range" valueAsNumber="50" max="100" min="1" step="1" />
+    <label for="color">Color</label>
+    <input id="color" class="colorInput" type="color" value="#001122" />
+    <button class="resetBtn" value="Reset" onclick="resetCanvas()">Reset</button>
   </div>
   <div class="canvas"></div>
   <div class="author"><span>By Javier</span></div>
